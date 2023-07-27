@@ -1,0 +1,19 @@
+.swiper-slide img {
+    width: 100%;
+    height: 300px;
+}
+
+.swiper-pagination{
+    display: none;
+    position: initial;
+    margin: 9px 0;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    display: block;
+    top: 60%;
+}
+
+.swiper{
+    width: 100%;
+}

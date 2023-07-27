@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
+
+:root{
+    --fonte-principal: "Poppins";
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 85px;
+}
+
+.menu__esquerdo{
+    display: flex;
+    height: 70px;
+    flex-grow: 0;
+}
+
+#logoempresa {
+    height: 70px;
+}
+
+.menu__centro{
+    display: flex;
+    padding: 0 0 0 20px;
+    flex-grow: 1;
+}
+
+.menu__direito{
+    display: flex;
+    flex-grow: 0;
+}
+
+#logocarrinho {
+    height: 35px;
+}
+
+.link__opcoes {
+    display: inline-block;
+    margin-right: 30px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.linha{
+    height: 1px;
+    background-color: #dddddd;
+    width: 100%;
+    align-self: center;
+}
+
+.carrossel {
+    width: 100%;
+    height: 100%;
+    padding: 50px 15px 50px 15px;
+}
+.sobre {
+    padding: 50px 15px 50px 15px;
+    text-align: justify;
+    text-align: center;
+}
+
+.sobre__titulo{
+    font-size: 24px;
+    font-weight: 500;
+    padding: 0 0 30px 0;
+}
+
+.sobre__descricao{
+    font-size: 16px;
+    font-weight: 400;
+    color: gray;
+    text-align:left;
+}
+
+.time {
+    padding: 50px 15px 50px 15px;
+    text-align: justify;
+    text-align: center;
+}
+
+.time__titulo{
+    font-size: 24px;
+    font-weight: 500;
+    padding: 0 0 30px 0;
+}
+
+.time__pessoas {
+    display: flex;
+    justify-content: center;
+}
+
+.time__pessoas>div {
+    padding: 0 50px 0 50px;
+}
+
+.imagem__pessoas {
+    height: 100px;
+    border-radius: 50%;
+}
+
+..time__titulo{
+    font-size: 24px;
+    font-weight: 500;
+    padding: 0 0 30px 0;
+}
+
+.produto__titulo{
+    font-size: 24px;
+    font-weight: 500;
+    padding: 30px 0 30px 0;
+    text-align: center;
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+}
+
+.imagem>div {
+    padding: 0 10px 0 10px;
+}
+
+.imagem__produtos{
+    height: 300px;
+}

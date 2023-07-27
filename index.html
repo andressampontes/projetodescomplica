@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop App</title>
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carrossel.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="menu__esquerdo">
+                <div class="logo">
+                    <img id="logoempresa" src="./assets/allstar.jpg" alt="Logo da Empresa">
+                </div>
+            </div>
+            <div class="menu__centro">
+                <nav>
+                    <div class="links">
+                        <a href="index.html" class="link__opcoes">Inicio</a>
+                        <a href="produtos.html" class="link__opcoes">Produtos</a>
+                        <a href="sobre.html" class="link__opcoes">Sobre</a>
+                        <a href="equipe.html" class="link__opcoes">Equipe</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="menu__direito">
+                <a href="#"><img id="logocarrinho" src="assets/carrinho.svg"></a>
+            </div>
+        </div> 
+        <div class="linha"></div>   
+    </header>  
+    
+    <main>
+        <section class="carrossel">
+            <div class="carrossel__container">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-pagination"></div>
+        
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="assets/produto1.jpg" alt="Carrosel 1"></div>
+                    <div class="swiper-slide"><img src="assets/produto2.jpg" alt="Carrosel 1"></div>
+                    <div class="swiper-slide"><img src="assets/produto3.jpg" alt="Carrosel 1"></div>
+                    <div class="swiper-slide"><img src="assets/produto4.jpg" alt="Carrosel 1"></div>
+                    <div class="swiper-slide"><img src="assets/produto5.jpg" alt="Carrosel 1"></div>
+                    <div class="swiper-slide"><img src="assets/produto1.jpg" alt="Carrosel 1"></div>
+                    </div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </section>
+            <div class="sobre">
+                <h1 class="sobre__titulo">Sobre Nós</h1>
+                <h2 class="sobre__descricao">Lorem ipsum dolor sit amet. 
+                    Et perferendis voluptatem aut recusandae laborum ut
+                fuga voluptas sit saepe odio nam excepturi ipsum. 
+                Id quae assumenda ea error architecto sit architecto velit 
+                ad explicabo aliquam non magni expedita est autem 
+                ostrum est illo voluptas. Et dicta ullam qui asperiores
+                facere qui sint mollitia et aliquid rerum vel accusamus 
+                quis sit corrupti excepturi ut ducimus repellat!</h2>
+            </div>
+
+        <section>  
+            <div class="time">
+                <h1 class="time__titulo">Nossa Equipe</h1>
+                <div class="time__pessoas">
+                    <div>
+                        <img class="imagem__pessoas" src="assets/time1.jpg" alt="Carrosel 1">
+                        <h3>Mariana Lopes</h3>
+                        <p>Diretora</p>
+                    </div>
+                    <div>
+                        <img class="imagem__pessoas" src="assets/time2.jpg" alt="Carrosel 1">
+                        <h3>André Santos</h3>
+                        <p>Gerente</p>
+                    </div>
+                    <div>
+                        <img class="imagem__pessoas" src="assets/time3.jpeg" alt="Carrosel 1">
+                        <h3>Patrícia Almeida</h3>
+                        <p>Coordenadora</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+   <script>
+        const swiper = new Swiper('.swiper', {
+        speed: 400,
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        },
+        });
+    </script>
+</body>
+</html>
